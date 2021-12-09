@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* COMMON */
+.done {
+    text-decoration: line-through;
+}
 /* HEADER */
 header {
     padding: 40px 0;
@@ -50,4 +53,5 @@ ul {
 }
 .close-task {
     float: right;
+    cursor: pointer;
 }

@@ -30,28 +30,10 @@
             <!-- tasks area -->
             <div class="tasks">
                 <ul>
-                    <li class="task">
-                        fare blabla
+                    <li v-for="(task, index) in tasks" class="task" :class="{'done': task.done === true}">
+                        {{ task.text }}
                         <div class="close-task">
-                            <i class="fas fa-window-close"></i>
-                        </div>
-                    </li>
-                    <li class="task">
-                        fare blabla
-                        <div class="close-task">
-                            <i class="fas fa-window-close"></i>
-                        </div>
-                    </li>
-                    <li class="task">
-                        fare blabla
-                        <div class="close-task">
-                            <i class="fas fa-window-close"></i>
-                        </div>
-                    </li>
-                    <li class="task">
-                        fare blabla
-                        <div class="close-task">
-                            <i class="fas fa-window-close"></i>
+                            <i @click="deleteTask(index)" class="fas fa-window-close"></i>
                         </div>
                     </li>
                 </ul>
