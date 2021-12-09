@@ -21,8 +21,8 @@
             <!-- filter area -->
             <div class="filters">
                 <div class="filter">
-                    <input type="text" placeholder="new task">
-                    <button>Add</button>
+                    <input @keyup.enter="addNewTask" v-model="newTask" type="text" placeholder="new task">
+                    <button @click="addNewTask">Add</button>
                 </div>
             </div>
             <!-- end filter area -->
