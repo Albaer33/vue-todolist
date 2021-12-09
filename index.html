@@ -30,8 +30,8 @@
             <!-- tasks area -->
             <div class="tasks">
                 <ul>
-                    <li v-for="(task, index) in tasks" class="task" :class="{'done': task.done === true}">
-                        {{ task.text }}
+                    <li v-for="(task, index) in tasks" class="task" :class="{'done': task.done}">
+                        <span class="task-text" @click="addRemoveDone(index)">{{ task.text }}</span>
                         <div class="close-task">
                             <i @click="deleteTask(index)" class="fas fa-window-close"></i>
                         </div>

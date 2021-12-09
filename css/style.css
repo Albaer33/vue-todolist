@@ -55,3 +55,6 @@ ul {
     float: right;
     cursor: pointer;
 }
+.task-text {
+    cursor: pointer;
+}

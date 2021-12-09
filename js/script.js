@@ -34,6 +34,10 @@ const app = new Vue(
                     });
                     this.newTask = '';
                 }
+            },
+            // aggiunge o toglie il done da un task
+            addRemoveDone: function(index) {
+                this.tasks[index].done = !this.tasks[index].done;
             }
         }
     }
